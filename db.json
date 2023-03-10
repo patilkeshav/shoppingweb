@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "ProductName": "one plus",
+      "Price": "25000",
+      "Discriptions": "oneplus nord",
+      "category": "mobile",
+      "id": 22
+    },
+    {
+      "ProductName": "one plus",
+      "Price": "25000",
+      "Discriptions": "oneplus nord",
+      "category": "mobile",
+      "id": 23
+    },
+    {
+      "ProductName": "one plus",
+      "Price": "25599",
+      "Discriptions": "oneplus nord",
+      "category": "mobile",
+      "id": 26
+    }
+  ]
+}

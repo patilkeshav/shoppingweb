@@ -1,0 +1,32 @@
+<div class="container-fluid">
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">ProductName</th>
+        <th scope="col">Price</th>
+        <th scope="col">category</th>
+        <th scope="col">Discriptions</th>
+        <th>Delet</th>
+    </thead>
+    <tbody>
+      <!--using asyc pipe we can subscribe the obervables
+       <tr *ngFor="let item of ProductlistAcs | async;let index=index"> -->
+        <tr *ngFor="let item of productlist;let index=index" (click)="navigateTo(item.id)">
+        <td>{{item.id}}</td>
+        <td>{{item.ProductName}}</td>
+        <td>{{item.Price}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.Discriptions}}</td>
+        <td>
+          <button class="btn btn-primary" type="button" (click)="deletProduct(item.id,index)"><i class="bi bi-trash3"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button" routerLink="/add-products">Add products</button>
+
+
+  </div>
+</div>
