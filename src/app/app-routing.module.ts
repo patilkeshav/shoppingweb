@@ -10,15 +10,15 @@ import { TableComponent } from './table/table.component';
 
 
 const routes: Routes = [
-  {path:'header',component:HeaderComponent},
-  {path:'home',component:HomeComponent},
-  {path:'search',component:SearchComponent},
-   {path:'table',component:TableComponent},
-  // {path:'product-list',component:ProductListComponent},
-  //  {path:'add-products',component:ProductsComponent},
-  //  {path:'edit-products/:id',component:ProductsComponent,canDeactivate:[CanAcessGuard]},
+  // {path:'header',component:HeaderComponent},
+  // {path:'home',component:HomeComponent},
+  // {path:'search',component:SearchComponent},
+  //  {path:'table',component:TableComponent},
+  {path:'product-list',component:ProductListComponent},
+   {path:'add-products',component:ProductsComponent},
+   {path:'edit-products/:id',component:ProductsComponent,canDeactivate:[CanAcessGuard]},
   
-  // {path:'',redirectTo:'product-list',pathMatch:'full'}
+  {path:'',redirectTo:'product-list',pathMatch:'full'}
 ]
   
 
